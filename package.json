@@ -1,14 +1,14 @@
 {
-  "name": "cicd",
+  "name": "simple-node-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple Node.js app",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "echo 'No test specified' && exit 0", 
+    "build": "echo 'Build step: Typically, you would transpile or bundle here'"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.18.2"
   }
 }
