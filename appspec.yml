@@ -3,6 +3,7 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/cicd  # Change this to your application directory
+    overwrite: true
 
 hooks:
   BeforeInstall:
