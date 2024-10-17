@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
 app.get('/test', (req, res) => {
     res.send('Hello World!');
   });
+  app.get('/health', (req, res) => {
+    res.send('Hello health!');
+  });
+  
   
 // Start the server
 app.listen(port, () => {
