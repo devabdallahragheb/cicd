@@ -14,7 +14,11 @@ app.get('/test', (req, res) => {
     res.send('Hello health!');
   });
   
+<<<<<<< HEAD
   //
+=======
+  /////
+>>>>>>> 6987ab3d6a4cb8116ed18b6137f457c7bc622ed0
 // Start the server
 app.listen(port, () => {
   console.log(`App running at port :${port}`);
