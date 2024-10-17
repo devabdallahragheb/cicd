@@ -1,0 +1,31 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      # Install any dependencies your build process needs
+      - npm install  # Example for Node.js projects, you can replace it with pip install for Python, etc.
+
+  pre_build:
+    commands:
+      - echo Running pre-build commands...
+  build:
+    commands:
+      - echo Build started on `date`
+      # Run your build commands
+      - npm run build  
+
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      # You can include commands that should be run after the build, e.g., deployment
+      - echo Deploying your app...
+
+artifacts:
+  files:
+    - '**/*'  # Specify the files to include in the build artifact (you can adjust the path based on your project)
+
+cache:
+  paths:
+    - 'node_modules/**/*'  # Cache any directories, like dependencies, to speed up future builds
